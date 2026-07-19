@@ -7,13 +7,12 @@ services:
       dockerfile: Dockerfile
     container_name: backend-app
     restart: unless-stopped
-    # Нет ports – недоступен с хоста
+    # недоступен с хоста
     networks:
       - app-network
-    # Опционально: можно задать переменные окружения через .env
 
   nginx:
-    image: nginx:stable-alpine  # рекомендуется фиксированная версия, не latest
+    image: nginx:stable-alpine  # фиксированная версия
     container_name: nginx-proxy
     ports:
       - "80:80"

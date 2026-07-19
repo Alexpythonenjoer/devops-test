@@ -63,7 +63,7 @@ devops-test/
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone <url-репозитория>
+   git clone https://github.com/Alexpythonenjoer/devops-test
    cd devops-test
 2. **Запустите контейнеры в фоновом режиме:**
    ````bash
